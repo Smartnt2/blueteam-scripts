@@ -28,10 +28,6 @@ sshd_handler() {
 }
 
 echo "changing config"
-sshd_handler "Port" "6767"
-ufw limit 6767/tcp
-ufw deny 22
-ufw reload
 sshd_handler "PasswordAuthentication" "no"
 sshd_handler "PubkeyAuthentication" "yes"
 sshd_handler "Authentication Methods" "publickey"

@@ -16,11 +16,12 @@ ufw default deny incoming
 ufw default allow outgoing
 
 #ssh
-ufw limit 6767
+ufw limit 22
 #ftp
-ufw limit 4444
+ufw limit 21
+ufw limit 20
 #sql
-ufw limit 333
+ufw limit 3306
 #wazuh
 ufw allow 514
 
