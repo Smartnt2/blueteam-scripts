@@ -31,6 +31,9 @@ ufw allow from 192.168.10.0/24
 #management network
 ufw allow from 172.16.1.0/24
 
+#netbird
+ufw allow from 10.10.1.99/24
+
 #datadog
 ufw allow from 3.1.36.99/32
 ufw allow from 3.1.219.207/32
